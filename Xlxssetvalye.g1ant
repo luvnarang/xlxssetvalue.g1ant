@@ -1,0 +1,14 @@
+
+addon xlsx version 4.104.0.0
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+xlsx.open ♥environment⟦USERPROFILE⟧\Desktop\document1.xlsx accessmode readwrite createifnotexist true
+xlsx.setvalue value Number row 1 colindex 1
+xlsx.setvalue value 2 row 1 colindex 2
+xlsx.select row1 1 column1 A row2 1 column2 B
+xlsx.copy
+xlsx.select row1 2 column1 2 row2 2 column2 2
+xlsx.paste
+xlsx.getvalue row 2 colindex 2
+dialog ♥result
+xlsx.setsheet name sheet2
